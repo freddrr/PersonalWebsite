@@ -11,22 +11,25 @@ const Home = () => {
         <section className="h-full">
             <div className="container mx-auto h-full">
                 <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
-                    <div className="text-center xl:text-left">
+                    <div className="text-center xl:text-left order-2 xl:order-none">
                         <span className="text-xl"> Full Stack Software Engineer </span>
                         <h1 className="h1 mb-6"> <span className="text-accent"> Freddy Torres </span>
                         </h1>
                         <p className="max-w-[500px] mb-9 text-white/80">
-                            Blah Blah Blah fill this in later
+                            Texas, U.S.A
                         </p>
                         <div className="flex flex-col xl:flex-row items-center gap-8">
-                            <Button
-                                variant="outline"
-                                size="lg"
-                                className="uppercase flex items-center gap-2"
-                            >
-                                <span> Download CV </span>
-                                <FiDownload className="text-xl" />
-                            </Button>
+                            <a href="/Freddy Trae Torres Resume.pdf" download="FreddyTorresResume.pdf" >
+                                <Button
+                                    variant="outline"
+                                    size="lg"
+                                    className="uppercase flex items-center gap-2"
+                                >
+                                    <span> Download CV </span>
+                                    <FiDownload className="text-xl" />
+                                </Button>
+                            </a>
+
                             <div>
                             <Socials
                                 containerStyles="flex gap-6"
@@ -35,7 +38,7 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                    <div> <Photo /> </div>
+                    <div className="order-1 xl:order-none mb-8 xl:mb-0"> <Photo /> </div>
                 </div>
             </div>
         </section>
